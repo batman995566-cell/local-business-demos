@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Beauty Lounge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">Glow Beauty Lounge</div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn-small">Book Now</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="tagline">Glow, Style, Confidence</p>
+        <h1>Beauty Services Designed To Help You Feel Your Best</h1>
+        <p>
+          From hairstyling and makeup to lashes and brows, we create a polished
+          beauty experience in a relaxing studio setting.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn">Book Appointment</a>
+          <a href="#services" class="btn btn-outline">View Services</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Today’s Hours</h3>
+        <p>Mon - Fri: 10:00 AM - 7:00 PM</p>
+        <p>Saturday: 9:00 AM - 6:00 PM</p>
+        <p>Sunday: Closed</p>
+        <div class="divider"></div>
+        <p><strong>Popular Services</strong></p>
+        <p>Hair Styling</p>
+        <p>Lashes</p>
+        <p>Brows & Makeup</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Our Services</p>
+        <h2>Luxury Beauty Care</h2>
+      </div>
+
+      <div class="service-grid">
+        <div class="card">
+          <h3>Silk Press</h3>
+          <p>Smooth, polished hair styling with body and shine.</p>
+          <span>$75</span>
+        </div>
+
+        <div class="card">
+          <h3>Hair Color</h3>
+          <p>Custom coloring services designed to match your look.</p>
+          <span>From $95</span>
+        </div>
+
+        <div class="card">
+          <h3>Makeup Application</h3>
+          <p>Soft glam or full glam for events, photos, and special occasions.</p>
+          <span>$85</span>
+        </div>
+
+        <div class="card">
+          <h3>Lash Extensions</h3>
+          <p>Natural or volume lashes for a fuller, elegant finish.</p>
+          <span>$110</span>
+        </div>
+
+        <div class="card">
+          <h3>Brow Shaping</h3>
+          <p>Clean brow shaping and detailing to frame your face.</p>
+          <span>$25</span>
+        </div>
+
+        <div class="card">
+          <h3>Bridal Beauty Package</h3>
+          <p>Hair and makeup package for weddings and formal events.</p>
+          <span>From $180</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Client Reviews</p>
+        <h2>What Clients Love About Us</h2>
+      </div>
+
+      <div class="review-grid">
+        <div class="card review-card">
+          <p>
+            “Beautiful studio, professional service, and my makeup came out amazing.”
+          </p>
+          <h4>- Tiana R.</h4>
+        </div>
+
+        <div class="card review-card">
+          <p>
+            “My silk press lasted and looked so good. I felt confident the whole week.”
+          </p>
+          <h4>- Aaliyah M.</h4>
+        </div>
+
+        <div class="card review-card">
+          <p>
+            “The lashes and brows were perfect. Very clean, stylish, and relaxing space.”
+          </p>
+          <h4>- Bri W.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location section" id="location">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Visit Us</p>
+        <h2>Glow Beauty Lounge</h2>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info">
+          <h3>Studio Location</h3>
+          <p>420 Main Street</p>
+          <p>Baltimore, MD</p>
+
+          <br>
+
+          <p><strong>Hours</strong></p>
+          <p>Mon - Fri: 10AM - 7PM</p>
+          <p>Saturday: 9AM - 6PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=Baltimore%20MD&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="section-tag">Book With Us</p>
+        <h2>Schedule Your Beauty Appointment</h2>
+        <p>
+          Ready for your next look? Send us a quick request and we’ll help you book.
+        </p>
+
+        <div class="contact-info">
+          <p><strong>Phone:</strong> (410) 555-0138</p>
+          <p><strong>Email:</strong> hello@glowbeautylounge.com</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="text" id="service" placeholder="Service Needed" required />
+        <textarea id="message" rows="5" placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send Request</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Glow Beauty Lounge. Demo Template.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

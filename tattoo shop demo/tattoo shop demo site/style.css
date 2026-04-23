@@ -1,0 +1,191 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#0b0b0b;
+color:#f2f2f2;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+.site-header{
+background:#111;
+border-bottom:1px solid #222;
+position:sticky;
+top:0;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:70px;
+}
+
+.logo{
+font-weight:bold;
+font-size:1.4rem;
+color:#e11d48;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.nav-links a{
+color:#eee;
+text-decoration:none;
+}
+
+.nav-links a:hover{
+color:#e11d48;
+}
+
+.btn{
+background:#e11d48;
+color:white;
+padding:12px 20px;
+border-radius:6px;
+border:none;
+cursor:pointer;
+}
+
+.btn-outline{
+border:2px solid #e11d48;
+color:#e11d48;
+padding:12px 20px;
+border-radius:6px;
+}
+
+.hero{
+min-height:85vh;
+display:flex;
+align-items:center;
+background:linear-gradient(#0b0b0b,#141414);
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1.5fr 1fr;
+gap:40px;
+}
+
+.hero-text h1{
+font-size:3rem;
+margin:15px 0;
+}
+
+.hero-text p:nth-of-type(2){
+margin-bottom:20px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.section{
+padding:80px 0;
+}
+
+.section-alt{
+background:#121212;
+}
+
+.section-heading{
+text-align:center;
+margin-bottom:40px;
+}
+
+.section-tag{
+color:#e11d48;
+font-weight:bold;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.card{
+background:#161616;
+padding:25px;
+border-radius:10px;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-5px);
+transition:.2s;
+border-color:#e11d48;
+}
+
+.location-grid{
+display:grid;
+grid-template-columns:1fr 1.5fr;
+gap:30px;
+}
+
+.location-card{
+background:#161616;
+padding:25px;
+border-radius:10px;
+border:1px solid #222;
+}
+
+.map-card{
+border-radius:10px;
+overflow:hidden;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:6px;
+border:1px solid #333;
+background:#0b0b0b;
+color:white;
+}
+
+.site-footer{
+text-align:center;
+padding:20px 0;
+border-top:1px solid #222;
+margin-top:40px;
+}
+
+@media(max-width:900px){
+
+.hero-grid,
+.card-grid,
+.location-grid,
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
