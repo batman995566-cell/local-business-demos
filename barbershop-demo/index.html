@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crown Cuts Barbershop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <h2 class="logo">Crown Cuts</h2>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn small-btn">Book Now</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <p class="tagline">Modern Style. Classic Cuts.</p>
+      <h1>Fresh Cuts That Keep You Looking Sharp</h1>
+      <p>
+        Professional barber services for fades, beard trims, shape-ups,
+        and clean everyday style.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Book Appointment</a>
+        <a href="#services" class="btn outline">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-heading">
+        <p class="tagline">Our Services</p>
+        <h2>Barber Services Built Around Style</h2>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Classic Haircut</h3>
+          <p>Clean professional haircut with detail and finishing touch.</p>
+          <span>$25</span>
+        </div>
+
+        <div class="card">
+          <h3>Skin Fade</h3>
+          <p>Sharp fade with smooth blending and crisp line work.</p>
+          <span>$35</span>
+        </div>
+
+        <div class="card">
+          <h3>Beard Trim</h3>
+          <p>Shape, line-up, and trim for a polished beard look.</p>
+          <span>$18</span>
+        </div>
+
+        <div class="card">
+          <h3>Shape Up</h3>
+          <p>Quick line-up to keep your cut looking fresh between visits.</p>
+          <span>$15</span>
+        </div>
+
+        <div class="card">
+          <h3>Kids Haircut</h3>
+          <p>Clean and comfortable cuts for younger clients.</p>
+          <span>$20</span>
+        </div>
+
+        <div class="card">
+          <h3>Cut + Beard Combo</h3>
+          <p>Complete service for a full sharp and finished look.</p>
+          <span>$45</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-section" id="about">
+    <div class="container about-grid">
+      <div>
+        <p class="tagline">About Us</p>
+        <h2>Professional Cuts In A Clean, Relaxed Shop</h2>
+        <p>
+          Crown Cuts Barbershop provides quality grooming services with
+          attention to detail, great customer service, and a comfortable shop
+          experience.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>Why Clients Choose Us</h3>
+        <p>✔ Skilled barbers</p>
+        <p>✔ Clean shop environment</p>
+        <p>✔ Walk-ins welcome</p>
+        <p>✔ Easy appointments</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-heading">
+        <p class="tagline">Reviews</p>
+        <h2>What Clients Are Saying</h2>
+      </div>
+
+      <div class="cards">
+        <div class="card review">
+          <p>“Best fade I’ve had in a long time. Clean shop and professional service.”</p>
+          <h4>- Marcus J.</h4>
+        </div>
+
+        <div class="card review">
+          <p>“Fast, sharp, and detailed. I’ll definitely be coming back.”</p>
+          <h4>- Devin R.</h4>
+        </div>
+
+        <div class="card review">
+          <p>“Great atmosphere and the barber took his time with the cut.”</p>
+          <h4>- Andre W.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="section-heading">
+        <p class="tagline">Visit Us</p>
+        <h2>Shop Location</h2>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-card">
+          <h3>Crown Cuts Barbershop</h3>
+          <p>250 Main Street</p>
+          <p>Baltimore, MD</p>
+
+          <br>
+
+          <p><strong>Hours</strong></p>
+          <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
+          <p>Saturday: 8:00 AM - 6:00 PM</p>
+          <p>Sunday: Closed</p>
+
+          <br>
+
+          <p><strong>Phone</strong></p>
+          <p>(410) 555-0128</p>
+        </div>
+
+        <div class="map-card">
+          <iframe
+            src="https://www.google.com/maps?q=Baltimore%20MD&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="tagline">Book Now</p>
+        <h2>Schedule Your Next Cut</h2>
+        <p>
+          Send a quick appointment request and we’ll get back to you with
+          available times.
+        </p>
+      </div>
+
+      <form id="bookingForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="text" id="service" placeholder="Service Needed" required />
+        <textarea id="message" rows="5" placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send Request</button>
+        <p id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Crown Cuts Barbershop. Demo Website.</p>
+    <a href="../">Back To Demo Homepage</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
